@@ -1,0 +1,18 @@
+<project name="Test" basedir=".">
+    <property name="libs.dir" value="libs"/>
+    <path id="test.classpath">
+         <!-- adding the saxon jar to your classpath -->
+        <fileset dir="${libs.dir}" includes="*.jar"/>
+    </path>
+
+    <target name="transform">
+        <xslt in="D:/King/Eclipse/达飞销售提单系统/test-output/testng-results.xml"
+              style="D:/King/Eclipse/达飞销售提单系统/test-output/testng-results.xsl"
+              out="D:/King/Eclipse/达飞销售提单系统/test-output/indexDecorate.html">
+             <!-- you need to specify the directory here again -->
+            <param name="testNgXslt.outputDir"
+                   expression="D:/King/Eclipse/达飞销售提单系统/test-output"/>
+            <classpath refid="test.classpath"/>
+        </xslt>
+    </target>
+</project>

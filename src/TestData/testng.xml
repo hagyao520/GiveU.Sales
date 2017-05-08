@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" configfailurepolicy ="continue">
+    <test name="Login">
+        <classes>
+            <class name="TestCases.LoginTest">
+                <methods>
+                    <include name="testlogin" />
+                    <exclude name="Test2" />
+                    <exclude name="Test3" />
+                    <exclude name="" />
+                </methods>
+             </class>
+        </classes>
+    </test><!--Test-->
+</suite><!--Suite-->
