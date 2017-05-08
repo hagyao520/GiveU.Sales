@@ -1,0 +1,10 @@
+<testdata>
+    <login name="登录相关测试数据">
+        <username>18311338905</username>
+        <password>a000000</password>
+        <checkpoint1>.//*[@id='ng-app']/body/div[2]/div/div[1]/div[5]/a</checkpoint1>
+        <value1>APP</value1>
+    </login>
+</testdata>
+
+
